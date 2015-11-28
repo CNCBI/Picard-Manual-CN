@@ -2,34 +2,28 @@
 ---
 <!doctype html>
 <html>
-    {% include head.html title="Building Picard From Source" %}
+    {% include head.html title="从源代码Build Picard" %}
     <body>
         <div class="wrapper">
             {% include header.html %}
 
-            <h2>Building Picard From Source</h2>
+            <h2>Building Picard From Source - 从源代码 Build Picard</h2>
 
             <section>
-            See <a href="http://samtools.github.io/htsjdk/building.html">building HTSJDK from source</a>.
+            请查看<a href="http://samtools.github.io/htsjdk/building.html"> 从源代码Build HTSJDK </a>。
             </section>
                 
             <a id="Prerequisites"/>
-            <h3>Java version</h3>
+            <h3>Java version - Java版本</h3>
             <section>
 
-            <p>Building the Picard command-line utilities requires Java 1.6.  They may
-            be built with the Java 1.7 compiler, but for maximum compatibility with Java 1.6 JVM,
-            you should compile using the Java 1.6 libraries.  This can be done in one of the
-            following ways:</p>
+            <p>Building Picard 命令行工具需要 Java 1.6。他们可能可以使用 Java 1.7 编译器，但是为了达到和 Java 1.6 JVM 最大的兼容性，你应该使用 Java 1.6 libraries。这可以通过下列某一种方法实现：
+            </p>
             <ul>
-                <li>Set an environment variable JAVA6_HOME that points to your Java 1.6
-                installation.</li>
-                <li>Pass to ant the argument -Djava6.home=<i>path</i>, where <i>path</i> is the directory of your Java
-                1.6 installation.</li>
+                <li>设置环境变量 JAVA6_HOME 指向你的 Java 1.6 的安装位置。</li>
+                <li>把参数-Djava6.home=<i>path</i> 传递给 ant， 其中 <i>path</i> 是你的 Java 1.6 安装的文件夹。</li>
             </ul>
-            <p>If you do not have Java 1.6 installed on your build machine, you may supply the
-            location of you Java 1.7 installation instead, but there may be problems running code
-            compiled this way on Java 1.6 JVMs.
+            <p>如果在你想build的机器上还没有安装 Java 1.6，你可以提供Java 1.7 的安装位置来替代，但是用这种方法编译的代码在Java 1.6 JVM上面运行时可能会有问题。
             </p>
             </section>
 
